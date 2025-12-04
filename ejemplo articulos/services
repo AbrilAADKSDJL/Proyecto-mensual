@@ -1,0 +1,76 @@
+using BusinessLogic.Models;
+using DataAccess.Repositories;
+using System.Collections.Generic;
+using BusinessLogic.Exceptions;
+
+namespace BusinessLogic.Services
+{
+    public class ArticuloService : IArticuloService
+    {
+        private readonly IArticuloRepository _articuloRepository;
+
+        public ArticuloService(IArticuloRepository articuloRepository)
+        {
+            _articuloRepository = articuloRepository;
+        }
+
+    public ArticuloDto? GetArticulo(int id)
+    {
+        var articulo = _articuloRepository.GetById(id);
+        return ArticuloMapper.ToDto(articulo);
+    }
+
+    public IEnumerable<ArticuloDto> GetAllArticulos()
+    {
+        var articulos = _articuloRepository.GetAll();
+        return ArticuloMapper.ToDtoList(articulos);
+    }
+
+    public void GuardarArticulo(ArticuloDto articuloDto)
+    {
+        if (articuloDto == null)
+        {
+            throw new BusinessLogicException("El artículo no puede ser nulo.");
+        }
+
+        var articulo = ArticuloMapper.ToEntity(articuloDto);
+        if (articulo == null)
+        {
+            throw new BusinessLogicException("Error al convertir el artículo.");
+        }
+
+        // Si IdProducto es 0, es un artículo nuevo (Alta).
+        // Si no, es un artículo existente (Modificación).
+        if (articulo.IdProducto == 0)
+        {
+            _articuloRepository.Add(    articulo);
+        }
+        else
+        {
+            _articuloRepository.Update(articulo);
+        }
+    }
+
+    public void EliminarArticulo(int id)
+    {
+        var articulo = _articuloRepository.GetById(id);
+        if (articulo == null)
+        {
+            throw new BusinessLogicException("El artículo que intenta eliminar no existe.");
+        }
+        _articuloRepository.Delete(id);
+    }
+
+    public bool ExistsByCodigo(string codigo, int? excludeId = null)
+    {
+        if (string.IsNullOrWhiteSpace(codigo)) return false;
+        return _articuloRepository.ExistsByCodigo(codigo.Trim(), excludeId);
+    }
+
+    public bool ExistsByCodigoBarra(string codigoBarra, int? excludeId = null)
+    {
+        if (string.IsNullOrWhiteSpace(codigoBarra)) return false;
+        return _articuloRepository.ExistsByCodigoBarra(codigoBarra.Trim(), excludeId);
+    }
+    }
+}

@@ -1,0 +1,62 @@
+using BusinessLogic.Models;
+using DataAccess.Entities;
+using System.Collections.Generic;
+using System.Linq;
+
+public static class ArticuloMapper
+{
+    public static ArticuloDto? ToDto(Articulo? articulo)
+    {
+        if (articulo == null) return null;
+        return new ArticuloDto
+        {
+            IdProducto = articulo.IdProducto,
+            IdCategoria = articulo.IdCategoria, // <-- Esto debe existir en el DTO
+            Codigo = articulo.Codigo,
+            CodigoBarra = articulo.CodigoBarra ?? string.Empty,
+            Nombre = articulo.Nombre,
+            Descripcion = articulo.Descripcion ?? string.Empty,
+            Marca = articulo.Marca ?? string.Empty,
+            Vencimiento = articulo.Vencimiento,
+            Lote = articulo.Lote,
+            AvisoVencimientoDias = articulo.AvisoVencimientoDias,
+            PrecioCompra = articulo.PrecioCompra,
+            PrecioVenta = articulo.PrecioVenta,
+            StockActual = articulo.StockActual,
+            StockMinimo = articulo.StockMinimo,
+            StockIdeal = articulo.StockIdeal,
+            StockMaximo = articulo.StockMaximo,
+            TipoStock = articulo.TipoStock
+        };
+    }
+
+    public static Articulo? ToEntity(ArticuloDto? dto)
+    {
+        if (dto == null) return null;
+        return new Articulo
+        {
+            IdProducto = dto.IdProducto,
+            IdCategoria = dto.IdCategoria ?? 0, //
+            Codigo = dto.Codigo,
+            CodigoBarra = dto.CodigoBarra,
+            Nombre = dto.Nombre,
+            Descripcion = dto.Descripcion,
+            Marca = dto.Marca,
+            Vencimiento = dto.Vencimiento,
+            Lote = dto.Lote,
+            AvisoVencimientoDias = dto.AvisoVencimientoDias ?? 0,
+            PrecioCompra = dto.PrecioCompra,
+            PrecioVenta = dto.PrecioVenta,
+            StockActual = dto.StockActual,
+            StockMinimo = dto.StockMinimo,
+            StockIdeal = dto.StockIdeal,
+            StockMaximo = dto.StockMaximo,
+            TipoStock = dto.TipoStock
+        };
+    }
+
+    public static IEnumerable<ArticuloDto> ToDtoList(IEnumerable<Articulo> articulos)
+    {
+        return articulos.Select(a => ToDto(a)).Where(dto => dto != null).Cast<ArticuloDto>().ToList();
+    }
+}

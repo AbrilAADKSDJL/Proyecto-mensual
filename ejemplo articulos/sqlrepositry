@@ -1,0 +1,128 @@
+using Dapper;
+using DataAccess.Entities;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+
+namespace DataAccess.Repositories
+{
+    public class SqlArticuloRepository : IArticuloRepository
+    {
+        private readonly IStockDatabaseConnectionFactory _connectionFactory;
+
+        public SqlArticuloRepository(IStockDatabaseConnectionFactory connectionFactory)
+        {
+            _connectionFactory = connectionFactory;
+        }
+
+        public IEnumerable<Articulo> GetAll()
+        {
+            using (var connection = _connectionFactory.CreateConnection())
+            {
+                return connection.Query<Articulo>(
+                    "sp_GetArticulos",
+                    commandType: CommandType.StoredProcedure
+                ).AsList();
+            }
+        }
+
+        public Articulo? GetById(int id)
+        {
+            using (var connection = _connectionFactory.CreateConnection())
+            {
+                return connection.QueryFirstOrDefault<Articulo>(
+                    "sp_GetArticulos",
+                    new { IdProducto = id },
+                    commandType: CommandType.StoredProcedure
+                );
+            }
+        }
+
+        public void Add(Articulo articulo)
+        {
+            using (var connection = _connectionFactory.CreateConnection())
+            {
+                var parameters = new
+                {
+                    articulo.Codigo,
+                    articulo.CodigoBarra,
+                    IdCategoria = articulo.IdCategoria,
+                    articulo.Nombre,
+                    articulo.Descripcion,
+                    articulo.Marca,
+                    articulo.Vencimiento,
+                    articulo.Lote,
+                    articulo.AvisoVencimientoDias,
+                    articulo.PrecioCompra,
+                    articulo.PrecioVenta,
+                    articulo.StockActual,
+                    articulo.StockMinimo,
+                    articulo.StockIdeal,
+                    articulo.StockMaximo,
+                    articulo.TipoStock
+                };
+                connection.Execute("sp_Producto_Alta", parameters, commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public void Update(Articulo articulo)
+        {
+            using (var connection = _connectionFactory.CreateConnection())
+            {
+                var parameters = new
+                {
+                    articulo.IdProducto,
+                    articulo.Codigo,
+                    articulo.CodigoBarra,
+                    IdCategoria = articulo.IdCategoria,
+                    articulo.Nombre,
+                    articulo.Descripcion,
+                    articulo.Marca,
+                    articulo.Vencimiento,
+                    articulo.Lote,
+                    articulo.AvisoVencimientoDias,
+                    articulo.PrecioCompra,
+                    articulo.PrecioVenta,
+                    articulo.StockActual,
+                    articulo.StockMinimo,
+                    articulo.StockIdeal,
+                    articulo.StockMaximo,
+                    articulo.TipoStock
+                };
+                connection.Execute("sp_Producto_Modificar", parameters, commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public void Delete(int id)
+        {
+            using (var connection = _connectionFactory.CreateConnection())
+            {
+                connection.Execute("sp_Producto_Baja", new { IdProducto = id }, commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public bool ExistsByCodigo(string codigo, int? excludeId = null)
+        {
+            using (var connection = _connectionFactory.CreateConnection())
+            {
+                return connection.ExecuteScalar<int>(
+                    "sp_Producto_ExisteCodigo",
+                    new { Codigo = codigo, ExcludeId = excludeId },
+                    commandType: CommandType.StoredProcedure
+                ) > 0;
+            }
+        }
+
+        public bool ExistsByCodigoBarra(string codigoBarra, int? excludeId = null)
+        {
+            using (var connection = _connectionFactory.CreateConnection())
+            {
+                return connection.ExecuteScalar<int>(
+                    "sp_Producto_ExisteCodigoBarra",
+                    new { CodigoBarra = codigoBarra, ExcludeId = excludeId },
+                    commandType: CommandType.StoredProcedure
+                ) > 0;
+            }
+        }
+    }
+}
