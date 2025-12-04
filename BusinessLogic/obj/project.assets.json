@@ -1642,11 +1642,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\BusinessLogic\\BusinessLogic.csproj",
+      "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\BusinessLogic\\BusinessLogic.csproj",
       "projectName": "BusinessLogic",
-      "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\BusinessLogic\\BusinessLogic.csproj",
+      "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\BusinessLogic\\BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\lezca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\BusinessLogic\\obj\\",
+      "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1667,11 +1667,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Services\\Services.csproj"
+            "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Services\\Services.csproj"
             }
           }
         }

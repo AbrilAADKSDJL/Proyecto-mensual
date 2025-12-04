@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OF39Li7GVHM=",
+  "dgSpecHash": "wQwOq/vxv8E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lezca\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\lezca\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

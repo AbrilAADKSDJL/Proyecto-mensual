@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Presentation\\Presentation.csproj": {}
+    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\BusinessLogic\\BusinessLogic.csproj",
+        "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\lezca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Services\\Services.csproj"
+              "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Services\\Services.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\lezca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -153,14 +153,14 @@
         }
       }
     },
-    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Presentation\\Presentation.csproj": {
+    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Presentation\\Presentation.csproj",
+        "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Presentation\\Presentation.csproj",
         "packagesPath": "C:\\Users\\lezca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Presentation\\obj\\",
+        "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -181,11 +181,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\BusinessLogic\\BusinessLogic.csproj"
+              "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\BusinessLogic\\BusinessLogic.csproj"
               },
-              "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Services\\Services.csproj"
+              "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Services\\Services.csproj"
               }
             }
           }
@@ -234,14 +234,14 @@
         }
       }
     },
-    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Services\\Services.csproj": {
+    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\lezca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Services\\obj\\",
+        "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

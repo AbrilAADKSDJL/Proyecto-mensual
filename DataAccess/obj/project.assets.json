@@ -1604,11 +1604,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\lezca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

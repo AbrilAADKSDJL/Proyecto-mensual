@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Session\\Session.csproj": {}
+    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Session\\Session.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Session\\Session.csproj": {
+    "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Session\\Session.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Session\\Session.csproj",
+        "projectUniqueName": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Session\\Session.csproj",
         "projectName": "Session",
-        "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Session\\Session.csproj",
+        "projectPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Session\\Session.csproj",
         "packagesPath": "C:\\Users\\lezca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Session\\obj\\",
+        "outputPath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Session\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

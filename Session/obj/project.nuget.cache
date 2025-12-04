@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1nCM7BHvUFI=",
+  "dgSpecHash": "r4+hq058IQ8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\proyecto-anual\\proyecto\\Session\\Session.csproj",
+  "projectFilePath": "C:\\Users\\lezca\\OneDrive\\Documentos\\GitHub\\Proyecto-mensual\\Session\\Session.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lezca\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\lezca\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
